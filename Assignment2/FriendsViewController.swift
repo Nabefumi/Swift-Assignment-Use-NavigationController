@@ -2,17 +2,17 @@
 //  FriendsViewController.swift
 //  Assignment2
 //
-//  Created by Takafumi Watanabe on 2021-10-14.
+//  Created by Takafumi Watanabe on 2021-10-15.
 //
 
 import UIKit
 
-final class FriendsViewController: UICollectionViewController, UITableViewDelegate, UITableViewDataSource {
+final class FriendsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     static func instantiate() -> FriendsViewController {
         UIStoryboard(name: "Friend", bundle: nil).instantiateInitialViewController() as! FriendsViewController
     }
-    
+
     // Section title
     let sectionData  = ["A", "B", "C","D", "F", "G", "H", "K", "M", "N"]
     
@@ -22,6 +22,8 @@ final class FriendsViewController: UICollectionViewController, UITableViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Friends"
         
         friendsTableView.dataSource = self
         friendsTableView.delegate = self
@@ -40,7 +42,7 @@ final class FriendsViewController: UICollectionViewController, UITableViewDelega
         return sectionData.count
     }
     
-//    // Return section title
+    // Return section title
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return sectionData[section]
     }
@@ -55,8 +57,13 @@ final class FriendsViewController: UICollectionViewController, UITableViewDelega
         return cell
     }
     
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 50
+//    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+//        return 20
+//    }
+    
+    // Section title background color
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        guard let headerView = view as? UITableViewHeaderFooterView else { return }
+        headerView.tintColor = .systemGray6 //use any color you want here .red, .black etc
     }
 }
-

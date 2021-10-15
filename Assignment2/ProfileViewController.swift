@@ -58,6 +58,38 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         return cell
     }
     
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//
+//        switch section {
+//        case 0:
+//            return myAccount.count
+//        case 1:
+//            return notification.count
+//        case 2:
+//            return more.count
+//        default:
+//            return 0
+//        }
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//
+//        let cell = profileTableView.dequeueReusableCell(withIdentifier: "profileTableView", for: indexPath)
+//
+//        switch(indexPath.section) {
+//        case 0:
+//            cell.textLabel?.text = myAccount[indexPath.row]
+//        case 1:
+//            cell.textLabel?.text = notification[indexPath.row]
+//        case 2:
+//            cell.textLabel?.text = more[indexPath.row]
+//        default:
+//            break
+//        }
+//
+//        return cell
+//    }
+    
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 50
     }
