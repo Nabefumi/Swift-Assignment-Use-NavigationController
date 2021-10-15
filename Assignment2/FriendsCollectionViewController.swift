@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FriendsCollectionViewController: UICollectionViewController, UITableViewDelegate, UITableViewDataSource {
+final class FriendsCollectionViewController: UICollectionViewController, UITableViewDelegate, UITableViewDataSource {
     
     // Section title
     let sectionData  = ["My Account", "Notification", "More"]
