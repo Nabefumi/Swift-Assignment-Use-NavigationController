@@ -21,6 +21,7 @@
 		0097123227168E6600A77593 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0097123127168E6600A77593 /* SettingTableViewCell.swift */; };
 		009712342716C1ED00A77593 /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009712332716C1ED00A77593 /* SwitchTableViewCell.swift */; };
 		009712382717CD8700A77593 /* SettingProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009712372717CD8700A77593 /* SettingProfileTableViewController.swift */; };
+		DB91AD3A271940DD009E0883 /* Friend.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB91AD39271940DD009E0883 /* Friend.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		0097123127168E6600A77593 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 		009712332716C1ED00A77593 /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
 		009712372717CD8700A77593 /* SettingProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingProfileTableViewController.swift; sourceTree = "<group>"; };
+		DB91AD39271940DD009E0883 /* Friend.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Friend.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				000FCCBF270FE3F1007ED2DF /* SceneDelegate.swift */,
 				000FCCC1270FE3F1007ED2DF /* ViewController.swift */,
 				000FCCC3270FE3F1007ED2DF /* Main.storyboard */,
+				DB91AD39271940DD009E0883 /* Friend.storyboard */,
 				003C2C762717DAA7008614FB /* FriendsCollectionViewController.swift */,
 				009712372717CD8700A77593 /* SettingProfileTableViewController.swift */,
 				0097122F27168C8B00A77593 /* ProfileEditViewController.swift */,
@@ -149,6 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB91AD3A271940DD009E0883 /* Friend.storyboard in Resources */,
 				000FCCCA270FE3F3007ED2DF /* LaunchScreen.storyboard in Resources */,
 				000FCCC7270FE3F3007ED2DF /* Assets.xcassets in Resources */,
 				000FCCC5270FE3F1007ED2DF /* Main.storyboard in Resources */,

@@ -131,8 +131,10 @@ override func viewDidLoad() {
         case .switchCell(let model):
             model.handler()
         }
+        let nextViewController = FriendsCollectionViewController.instantiate()
+        navigationController?.pushViewController(nextViewController, animated: true)
         // タップされたセルの行番号を出力
-        print("\(indexPath.row)番目の行が選択されました。")
+        print("\(indexPath.section)番目のセクション(0始まり)の\(indexPath.row)番目の行(0始まり)が選択されました。")
     }
     
     // Processing when the "Edit" button is pressed
