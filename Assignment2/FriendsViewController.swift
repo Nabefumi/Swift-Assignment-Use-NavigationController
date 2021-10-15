@@ -7,7 +7,11 @@
 
 import UIKit
 
-class FriendsViewController: UICollectionViewController, UITableViewDelegate, UITableViewDataSource {
+final class FriendsViewController: UICollectionViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    static func instantiate() -> FriendsViewController {
+        UIStoryboard(name: "Friend", bundle: nil).instantiateInitialViewController() as! FriendsViewController
+    }
     
     // Section title
     let sectionData  = ["A", "B", "C","D", "F", "G", "H", "K", "M", "N"]

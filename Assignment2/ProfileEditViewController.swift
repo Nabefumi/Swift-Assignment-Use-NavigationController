@@ -133,9 +133,11 @@ override func viewDidLoad() {
         case .switchCell(let model):
             model.handler()
         }
-        // Output the line number of the tapped cell.
         print("\(indexPath.row)row has been selected.")
-
+        let nextViewController = FriendsViewController.instantiate()
+        navigationController?.pushViewController(nextViewController, animated: true)
+        // Output the line number of the tapped cell.
+        print("\(indexPath.section)番目のセクション(0始まり)の\(indexPath.row)番目の行(0始まり)が選択されました。")
     }
     
     // Processing when the "Edit" button is pressed

@@ -384,7 +384,7 @@ your plan.</string>
         <!--Friends View Controller-->
         <scene sceneID="boV-mK-NLh">
             <objects>
-                <viewController storyboardIdentifier="toFriendsCollectionViewController" id="9mA-cr-K75" customClass="FriendsViewController" customModule="Assignment2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Friend" id="9mA-cr-K75" customClass="FriendsViewController" customModule="Assignment2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="T8n-14-8EG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
