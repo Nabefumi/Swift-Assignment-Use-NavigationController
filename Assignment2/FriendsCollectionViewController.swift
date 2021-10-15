@@ -10,9 +10,9 @@ import UIKit
 class FriendsCollectionViewController: UICollectionViewController, UITableViewDelegate, UITableViewDataSource {
     
     // Section title
-    let sectionData  = ["My Account", "Notification", "More"]
+    let sectionData  = ["A", "B", "C","D", "F", "G", "H", "K", "M", "N"]
     
-    let tableData = [ ["Manage profile", "Payment"], ["Notification", "Promothinal Notification"], ["Contact Us", "Log Out"]]
+    let tableData = [ ["Alexander Valley", "Anderson Valley", "Atlas Peak"], ["Bennett Valley"], ["Calistoga", "Chalk Hill"], ["Diamond Mountain", "Dry Creek Valley"], ["Fort Ross / Seaview"], ["Green Valley"], ["Howell Mountain"], ["Knights Valley"], ["Los Carneros", "Liam Valley"], ["mike Valley"], ["nik Valley"]]
 
     @IBOutlet weak var friendsTableView: UITableView!
     

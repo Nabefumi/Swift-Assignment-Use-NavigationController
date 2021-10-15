@@ -72,6 +72,68 @@ your plan.</string>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="99.776785714285708"/>
         </scene>
+        <!--Password Reset View Controller-->
+        <scene sceneID="wXX-my-D6N">
+            <objects>
+                <viewController id="rxV-fd-d5P" customClass="PasswordResetViewController" customModule="Assignment2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UUh-1a-soP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainLogo" translatesAutoresizingMaskIntoConstraints="NO" id="fx0-uf-OF2">
+                                <rect key="frame" x="87" y="110" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Karen Trip" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttL-Az-bv0">
+                                <rect key="frame" x="20" y="271" width="374" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Forgot your password?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P63-Fh-vLu">
+                                <rect key="frame" x="31" y="338" width="296" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please enter the email you use to sign in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDz-i8-g8N">
+                                <rect key="frame" x="49" y="405" width="317" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mb0-Z8-Bip">
+                                <rect key="frame" x="20" y="599" width="374" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.47450977560000002" green="0.80000001190000003" blue="0.7607843876" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Request password reset">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tapButton:" destination="rxV-fd-d5P" eventType="touchUpInside" id="MmO-b4-VHT"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please input your email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r8F-G6-FFH">
+                                <rect key="frame" x="20" y="532" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="X7q-RR-r0F"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9YX-7y-HoF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="17g-Z8-Qsw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2756.521739130435" y="-1096.2053571428571"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="dd4-vl-Izg">
             <objects>
@@ -105,13 +167,6 @@ your plan.</string>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Forgot Password?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmD-uJ-v7s">
-                                <rect key="frame" x="261" y="491" width="133" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don’t have an account ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YjS-Bt-r9t">
                                 <rect key="frame" x="87" y="795" width="165" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -150,13 +205,24 @@ your plan.</string>
                                     <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
                                 </buttonConfiguration>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIl-FP-Vs8">
-                                <rect key="frame" x="261" y="795" width="55" height="18"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZC-Fr-Y29">
+                                <rect key="frame" x="257" y="789" width="137" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <color key="textColor" red="0.47450977560000002" green="0.80000001190000003" blue="0.7607843876" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="highlightedColor" red="0.47450977560000002" green="0.80000001190000003" blue="0.7607843876" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </label>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign up"/>
+                                <connections>
+                                    <segue destination="tki-uE-bT1" kind="show" id="t7x-LH-vmP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xc1-er-anO">
+                                <rect key="frame" x="217" y="595" width="177" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Forgot Password?"/>
+                                <connections>
+                                    <segue destination="rxV-fd-d5P" kind="show" id="2cJ-Ep-gw3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="u3p-oa-rDG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -165,7 +231,7 @@ your plan.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bTs-Gw-LX7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1976.8115942028987" y="-151.33928571428569"/>
+            <point key="canvasLocation" x="1976.8115942028987" y="-333.48214285714283"/>
         </scene>
         <!--Profile Edit View Controller-->
         <scene sceneID="mpy-eO-p42">
@@ -181,7 +247,7 @@ your plan.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ik9-EJ-Vha" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2835" y="-151"/>
+            <point key="canvasLocation" x="3159" y="-333"/>
         </scene>
         <!--Setting Profile Table View Controller-->
         <scene sceneID="vw9-0n-FhT">
@@ -250,7 +316,7 @@ your plan.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="syj-ds-CbK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3661" y="-151"/>
+            <point key="canvasLocation" x="3900" y="-333"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="r1y-7h-mTP">
@@ -313,12 +379,12 @@ your plan.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5rt-1s-hTB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1976.8115942028987" y="538.39285714285711"/>
+            <point key="canvasLocation" x="1977" y="670"/>
         </scene>
         <!--Friends Collection View Controller-->
         <scene sceneID="boV-mK-NLh">
             <objects>
-                <viewController storyboardIdentifier="nextFriends" id="9mA-cr-K75" customClass="FriendsCollectionViewController" customModule="Assignment2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="toFriendsCollectionViewController" id="9mA-cr-K75" customClass="FriendsCollectionViewController" customModule="Assignment2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="T8n-14-8EG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -342,13 +408,11 @@ your plan.</string>
                         <viewLayoutGuide key="safeArea" id="4Mg-QC-E68"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <connections>
-                        <outlet property="friendsTableView" destination="mqX-3y-xjh" id="mrr-Uj-mCz"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="fON-V5-0Y3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wdt-dY-agU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2818.840579710145" y="537.05357142857144"/>
+            <point key="canvasLocation" x="2938" y="386"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="x6x-dX-hyp">
@@ -397,7 +461,7 @@ your plan.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bhJ-Ea-3VG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1977" y="1244"/>
+            <point key="canvasLocation" x="1977" y="1410"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="n5K-4A-j8N">
@@ -418,6 +482,9 @@ your plan.</string>
             <point key="canvasLocation" x="131.8840579710145" y="99.776785714285708"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="t7x-LH-vmP"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="WelcomeLgo" width="375" height="244"/>
         <image name="mainLogo" width="149" height="115"/>

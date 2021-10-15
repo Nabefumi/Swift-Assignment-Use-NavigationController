@@ -54,6 +54,8 @@ override func viewDidLoad() {
     tavleView.delegate = self
     tavleView.frame = view.frame
     
+    self.navigationItem.hidesBackButton = true
+    
     // Edit Button
     editBarButtonItem = UIBarButtonItem(title: "Edit", style: .done, target: self, action: #selector(editBarButtonTapped(_:)))
     self.navigationItem.rightBarButtonItems = [editBarButtonItem]
@@ -131,8 +133,9 @@ override func viewDidLoad() {
         case .switchCell(let model):
             model.handler()
         }
-        // タップされたセルの行番号を出力
-        print("\(indexPath.row)番目の行が選択されました。")
+        // Output the line number of the tapped cell.
+        print("\(indexPath.row)row has been selected.")
+
     }
     
     // Processing when the "Edit" button is pressed
