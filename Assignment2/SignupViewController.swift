@@ -11,8 +11,11 @@ class SignupViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Sign in"
 
-        // Do any additional setup after loading the view.
+        // Delete text "Back" Button
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
 
